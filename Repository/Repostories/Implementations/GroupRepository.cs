@@ -5,7 +5,7 @@ using Repository.Repostories.Interfaces;
 
 namespace Repository.Repostories.Implementations
 {
-    public class LibraryRepository : IRepository<Group>
+    public class GroupRepository : IRepository<Group>
     {
         public void Create(Group data)
         {

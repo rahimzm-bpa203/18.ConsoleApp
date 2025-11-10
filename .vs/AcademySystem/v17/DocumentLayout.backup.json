@@ -34,12 +34,11 @@
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repostories\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Repostories\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repostories\\Interfaces\\IRepository.cs*",
-              "RelativeToolTip": "Repository\\Repostories\\Interfaces\\IRepository.cs*",
+              "ToolTip": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repostories\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "Repository\\Repostories\\Interfaces\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:16:27.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T20:16:27.028Z"
             },
             {
               "$type": "Document",
@@ -47,9 +46,9 @@
               "Title": "GroupRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repostories\\Implementations\\GroupRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Repostories\\Implementations\\GroupRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repostories\\Implementations\\GroupRepository.cs*",
-              "RelativeToolTip": "Repository\\Repostories\\Implementations\\GroupRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA3AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repostories\\Implementations\\GroupRepository.cs",
+              "RelativeToolTip": "Repository\\Repostories\\Implementations\\GroupRepository.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAC8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T20:15:01.723Z",
               "EditorCaption": ""
@@ -64,8 +63,7 @@
               "RelativeToolTip": "Repository\\Data\\AppDpContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:09:57.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T20:09:57.456Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:03:02.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T20:03:02.014Z"
             }
           ]
         }
