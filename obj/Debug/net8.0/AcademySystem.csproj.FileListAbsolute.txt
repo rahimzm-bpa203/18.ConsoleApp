@@ -1,0 +1,4 @@
+C:\Users\user\Desktop\AcademySystem\obj\Debug\net8.0\AcademySystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\AcademySystem\obj\Debug\net8.0\AcademySystem.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\AcademySystem\obj\Debug\net8.0\AcademySystem.AssemblyInfo.cs
+C:\Users\user\Desktop\AcademySystem\obj\Debug\net8.0\AcademySystem.csproj.CoreCompileInputs.cache
