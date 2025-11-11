@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\AcademySystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8DBBF2C-9029-4884-84D0-D38A88D1BC85}|Repository\\Repository.csproj|c:\\users\\user\\desktop\\academysystem\\repository\\repostories\\implementations\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8DBBF2C-9029-4884-84D0-D38A88D1BC85}|Repository\\Repository.csproj|solutionrelative:repository\\repostories\\implementations\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademySystem.csproj|c:\\users\\user\\desktop\\academysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademySystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademySystem.csproj|c:\\users\\user\\desktop\\academysystem\\helpers\\menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademySystem.csproj|solutionrelative:helpers\\menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8DBBF2C-9029-4884-84D0-D38A88D1BC85}|Repository\\Repository.csproj|c:\\users\\user\\desktop\\academysystem\\repository\\repostories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8DBBF2C-9029-4884-84D0-D38A88D1BC85}|Repository\\Repository.csproj|solutionrelative:repository\\repostories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8DBBF2C-9029-4884-84D0-D38A88D1BC85}|Repository\\Repository.csproj|c:\\users\\user\\desktop\\academysystem\\repository\\data\\appdpcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8DBBF2C-9029-4884-84D0-D38A88D1BC85}|Repository\\Repository.csproj|solutionrelative:repository\\data\\appdpcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|c:\\users\\user\\desktop\\academysystem\\service\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|solutionrelative:service\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademySystem.csproj|c:\\users\\user\\desktop\\academysystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademySystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|c:\\users\\user\\desktop\\academysystem\\service\\services\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8DBBF2C-9029-4884-84D0-D38A88D1BC85}|Repository\\Repository.csproj|c:\\users\\user\\desktop\\academysystem\\repository\\repostories\\implementations\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8DBBF2C-9029-4884-84D0-D38A88D1BC85}|Repository\\Repository.csproj|solutionrelative:repository\\repostories\\implementations\\grouprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademySystem.csproj|c:\\users\\user\\desktop\\academysystem\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademySystem.csproj|solutionrelative:controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8DBBF2C-9029-4884-84D0-D38A88D1BC85}|Repository\\Repository.csproj|c:\\users\\user\\desktop\\academysystem\\repository\\data\\appdpcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8DBBF2C-9029-4884-84D0-D38A88D1BC85}|Repository\\Repository.csproj|solutionrelative:repository\\data\\appdpcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,36 +42,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Menus.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\AcademySystem\\Helpers\\Menus.cs",
+              "RelativeDocumentMoniker": "Helpers\\Menus.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\AcademySystem\\Helpers\\Menus.cs",
+              "RelativeToolTip": "Helpers\\Menus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T02:14:33.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GroupController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\AcademySystem\\Controllers\\GroupController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GroupController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\AcademySystem\\Controllers\\GroupController.cs",
+              "RelativeToolTip": "Controllers\\GroupController.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAiwNIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T00:13:44.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GroupService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\AcademySystem\\Service\\Services\\Implementations\\GroupService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Implementations\\GroupService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\AcademySystem\\Service\\Services\\Implementations\\GroupService.cs",
+              "RelativeToolTip": "Service\\Services\\Implementations\\GroupService.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAQwDwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T20:30:02.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IGroupService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\AcademySystem\\Service\\Services\\Interfaces\\IGroupService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IGroupService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\AcademySystem\\Service\\Services\\Interfaces\\IGroupService.cs",
+              "RelativeToolTip": "Service\\Services\\Interfaces\\IGroupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T20:27:04.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repostories\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Repostories\\Interfaces\\IRepository.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repostories\\Interfaces\\IRepository.cs",
               "RelativeToolTip": "Repository\\Repostories\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:16:27.028Z"
+              "WhenOpened": "2025-11-10T20:16:27.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "GroupRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repostories\\Implementations\\GroupRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Repostories\\Implementations\\GroupRepository.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repostories\\Implementations\\GroupRepository.cs",
               "RelativeToolTip": "Repository\\Repostories\\Implementations\\GroupRepository.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAAC8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T20:15:01.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "AppDpContext.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Data\\AppDpContext.cs",
               "RelativeDocumentMoniker": "Repository\\Data\\AppDpContext.cs",
@@ -67,15 +136,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\AcademySystem\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\AcademySystem\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAGgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T20:03:02.014Z"
+              "WhenOpened": "2025-11-10T20:03:02.014Z",
+              "EditorCaption": ""
             }
           ]
         }

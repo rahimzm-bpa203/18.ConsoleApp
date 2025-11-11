@@ -55,6 +55,11 @@ namespace Service.Services.Implementations
             return _groupRepository.GetAll(g => g.Room.Trim().ToLower() == room.Trim().ToLower());
         }
 
+        public List<Group> Search(string name)
+        {
+            return _groupRepository.GetAll(g => g.Name.Trim().ToLower().Contains(name.Trim().ToLower()));
+        }
+
 
         public Group Update(int id, Group group)
         {

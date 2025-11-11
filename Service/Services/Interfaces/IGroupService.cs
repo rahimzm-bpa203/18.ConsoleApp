@@ -10,6 +10,7 @@ namespace Service.Services.Interfaces
         Group GetById(int id);
         Group GetByTeacher(string teacher);
         Group GetByRoom(string room);
+        List<Group> Search(string searchText);
         List<Group> GetAll();
     }
 }

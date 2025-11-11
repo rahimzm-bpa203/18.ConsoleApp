@@ -36,6 +36,15 @@ namespace Repository.Repostories.Implementations
             return predicate != null ? AppDbContext<Group>.datas.FindAll(predicate) : AppDbContext<Group>.datas;
         }
 
+        public List<Group> Search(string searchText)
+        {
+            if (string.IsNullOrWhiteSpace(searchText))
+                return new List<Group>();
+
+            return AppDbContext<Group>.datas
+                .FindAll(g => g.Name != null && g.Name.ToLower().Contains(searchText.ToLower()));
+        }
+
         public void Update(Group data)
         {
             Group dbGroup = Get(l => l.Id == data.Id);

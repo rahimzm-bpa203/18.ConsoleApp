@@ -9,5 +9,6 @@ namespace Repository.Repostories.Interfaces
         void Delete(T data);
         T Get(Predicate<T> predicate);
         List<T> GetAll(Predicate<T> predicate);
+        List<T> Search(string searchText);
     }
 }
