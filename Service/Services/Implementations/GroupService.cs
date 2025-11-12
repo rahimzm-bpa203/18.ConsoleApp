@@ -45,19 +45,19 @@ namespace Service.Services.Implementations
 
             return group;
         }
-        public List<Group> GetByTeacher(string teacher)
+        public Group GetByTeacher(string teacher)
         {
-            return _groupRepository.GetAll(g => g.Teacher.Trim().ToLower() == teacher.Trim().ToLower());
+            return _groupRepository.Get(g => g.Teacher.Trim().ToLower() == teacher.Trim().ToLower());
         }
 
-        public List<Group> GetByRoom(string room)
+        public Group GetByRoom(string room)
         {
-            return _groupRepository.GetAll(g => g.Room.Trim().ToLower() == room.Trim().ToLower());
+            return _groupRepository.Get(g => g.Room.Trim().ToLower() == room.Trim().ToLower());
         }
 
         public List<Group> Search(string name)
         {
-            return _groupRepository.GetAll(g => g.Name.Trim().ToLower().Contains(name.Trim().ToLower()));
+            return _groupRepository.GetAll(g => g.Name.Trim().ToLower()==name.Trim().ToLower());
         }
 
 
@@ -73,5 +73,7 @@ namespace Service.Services.Implementations
 
             return GetById(id);
         }
+
+      
     }
 }
