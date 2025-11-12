@@ -94,8 +94,8 @@ namespace AcademySystem
                 "4 -Get Group by Id \n" +
                 "5 -Group by Teacher \n" +
                 "6 -Get Group by Room \n" +
-                "7 - Search Group Get \n" +
-                "8 - Get All Groups \n\n" +
+                "7 - Get All Groups  \n" +
+                "8 - Search Group  \n\n" +
 
                 "9 - Create Student\n" +
                 "10 - Update Student \n" +
