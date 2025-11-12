@@ -53,6 +53,9 @@ namespace AcademySystem
                         case (int)Menus.GetStudentById:
                             studentController.GetById();
                             break;
+                        case (int)Menus.GetStudentsByAge:
+                            studentController.GetByAge();
+                            break;
                         case (int)Menus.GetAllStudentsByGroupId:
                             studentController.GetAll();
                             break;
@@ -86,20 +89,21 @@ namespace AcademySystem
         {
             Helper.PrintConsole(ConsoleColor.Yellow,
                 "1 - Create Group\n" +
-                "2 - Get Group by Id\n" +
-                "3 - Get All Groups\n" +
-                "4 - Delete Group\n" +
-                "5 - Update Group\n" +
-                "6 - Search Group\n" +
-                "7 - Get Group by Teacher\n" +
-                "8 - Get Group by Room\n\n"+
+                "2 -Update Group \n" +
+                "3 - Delete Group\n" +
+                "4 -Get Group by Id \n" +
+                "5 -Group by Teacher \n" +
+                "6 -Get Group by Room \n" +
+                "7 - Search Group Get \n" +
+                "8 - Get All Groups \n\n" +
 
                 "9 - Create Student\n" +
-                "10 - Get Student by Id\n" +
-                "11 - Get All Students\n" +
-                "12 - Delete Student\n" +
-                "13 - Update Student\n" +
-                "14 - Search Student\n"
+                "10 - Update Student \n" +
+                "11 -Delete Student \n" +
+                "12 -Get Student by Id \n" +
+                "13 - Get Student by Age\n" +
+                "14 - Get All Students\n" +
+                "15 - Search Student\n"
                 );
         }
     }

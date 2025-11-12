@@ -59,22 +59,6 @@ namespace AcademySystem.Controllers
             }
         }
 
-        public void GetAll()
-        {
-            var groups = _groupService.GetAll();
-            if (groups.Count > 0)
-            {
-                foreach (var group in groups)
-                {
-                    Helper.PrintConsole(ConsoleColor.Green,
-                        $"Group Id: {group.Id}, Name: {group.Name}, Teacher: {group.Teacher}, Room: {group.Room}");
-                }
-            }
-            else
-            {
-                Helper.PrintConsole(ConsoleColor.Red, "No groups found! Please create a group first.");
-            }
-        }
 
         public void Delete()
         {
@@ -187,6 +171,22 @@ namespace AcademySystem.Controllers
             else
             {
                 Helper.PrintConsole(ConsoleColor.Red, "No groups found for this room!");
+            }
+        }
+        public void GetAll()
+        {
+            var groups = _groupService.GetAll();
+            if (groups.Count > 0)
+            {
+                foreach (var group in groups)
+                {
+                    Helper.PrintConsole(ConsoleColor.Green,
+                        $"Group Id: {group.Id}, Name: {group.Name}, Teacher: {group.Teacher}, Room: {group.Room}");
+                }
+            }
+            else
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "No groups found! Please create a group first.");
             }
         }
         public void Search()
