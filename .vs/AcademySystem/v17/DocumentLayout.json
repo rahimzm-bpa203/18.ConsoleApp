@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|c:\\users\\user\\desktop\\18.consoleapp\\service\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|solutionrelative:service\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|solutionrelative:controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|c:\\users\\user\\desktop\\18.consoleapp\\service\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|solutionrelative:service\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|c:\\users\\user\\desktop\\18.consoleapp\\service\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|solutionrelative:service\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|c:\\users\\user\\desktop\\18.consoleapp\\service\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|solutionrelative:service\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 224,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Repository\\Repostories\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Repostories\\Interfaces\\IRepository.cs",
@@ -62,7 +62,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Menus.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Helpers\\Menus.cs",
               "RelativeDocumentMoniker": "Helpers\\Menus.cs",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "IGroupService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Interfaces\\IGroupService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IGroupService.cs",
@@ -86,19 +86,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "GroupService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Implementations\\GroupService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\Implementations\\GroupService.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Implementations\\GroupService.cs",
               "RelativeToolTip": "Service\\Services\\Implementations\\GroupService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T04:03:35.248Z"
+              "WhenOpened": "2025-11-12T04:03:35.248Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -106,12 +107,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAAAGAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T03:56:14.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T03:56:14.258Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "IStudentService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Interfaces\\IStudentService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IStudentService.cs",
@@ -123,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "StudentService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Implementations\\StudentService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\Implementations\\StudentService.cs",
@@ -131,24 +131,25 @@
               "RelativeToolTip": "Service\\Services\\Implementations\\StudentService.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAiwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T02:01:07.312Z"
+              "WhenOpened": "2025-11-12T02:01:07.312Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GroupController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Controllers\\GroupController.cs",
               "RelativeDocumentMoniker": "Controllers\\GroupController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Controllers\\GroupController.cs",
               "RelativeToolTip": "Controllers\\GroupController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T22:53:18.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
