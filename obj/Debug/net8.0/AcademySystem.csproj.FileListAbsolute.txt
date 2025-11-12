@@ -1,3 +1,13 @@
-C:\Users\user\Desktop\AcademySystem\obj\Debug\net8.0\AcademySystem.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\user\Desktop\AcademySystem\obj\Debug\net8.0\AcademySystem.csproj.CoreCompileInputs.cache
-C:\Users\user\Desktop\AcademySystem\obj\Debug\net8.0\AcademySystem.sourcelink.json
+C:\Users\user\Desktop\18.ConsoleApp\bin\Debug\net8.0\AcademySystem.exe
+C:\Users\user\Desktop\18.ConsoleApp\bin\Debug\net8.0\AcademySystem.deps.json
+C:\Users\user\Desktop\18.ConsoleApp\bin\Debug\net8.0\AcademySystem.runtimeconfig.json
+C:\Users\user\Desktop\18.ConsoleApp\bin\Debug\net8.0\AcademySystem.dll
+C:\Users\user\Desktop\18.ConsoleApp\bin\Debug\net8.0\AcademySystem.pdb
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\AcademySystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\AcademySystem.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\AcademySystem.sourcelink.json
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\AcademySystem.dll
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\refint\AcademySystem.dll
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\AcademySystem.pdb
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\AcademySystem.genruntimeconfig.cache
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\ref\AcademySystem.dll

@@ -1,0 +1,13 @@
+C:\Users\user\Desktop\18.ConsoleApp\bin\Debug\net8.0\AcademyPresentation.exe
+C:\Users\user\Desktop\18.ConsoleApp\bin\Debug\net8.0\AcademyPresentation.deps.json
+C:\Users\user\Desktop\18.ConsoleApp\bin\Debug\net8.0\AcademyPresentation.runtimeconfig.json
+C:\Users\user\Desktop\18.ConsoleApp\bin\Debug\net8.0\AcademyPresentation.dll
+C:\Users\user\Desktop\18.ConsoleApp\bin\Debug\net8.0\AcademyPresentation.pdb
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\AcademyPresentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\AcademyPresentation.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\AcademyPresentation.sourcelink.json
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\AcademyPresentation.dll
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\refint\AcademyPresentation.dll
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\AcademyPresentation.pdb
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\AcademyPresentation.genruntimeconfig.cache
+C:\Users\user\Desktop\18.ConsoleApp\obj\Debug\net8.0\ref\AcademyPresentation.dll

@@ -45,21 +45,29 @@ namespace Service.Services.Implementations
 
             return group;
         }
-        public Group GetByTeacher(string teacher)
+        public List<Group> GetByTeacher(string teacher)
         {
-            return _groupRepository.Get(g => g.Teacher.Trim().ToLower() == teacher.Trim().ToLower());
+            if (string.IsNullOrWhiteSpace(teacher))
+                return new List<Group>();
+
+            return _groupRepository.GetAll(g => g.Teacher != null && g.Teacher.Trim().ToLower() == teacher.Trim().ToLower());
         }
 
-        public Group GetByRoom(string room)
+        public List<Group> GetByRoom(string room)
         {
-            return _groupRepository.Get(g => g.Room.Trim().ToLower() == room.Trim().ToLower());
+            if (string.IsNullOrWhiteSpace(room))
+                return new List<Group>();
+
+            return _groupRepository.GetAll(g => g.Room != null && g.Room.Trim().ToLower() == room.Trim().ToLower());
         }
 
         public List<Group> Search(string name)
         {
-            return _groupRepository.GetAll(g => g.Name.Trim().ToLower()==name.Trim().ToLower());
-        }
+            if (string.IsNullOrWhiteSpace(name))
+                return new List<Group>();
 
+            return _groupRepository.GetAll(g => g.Name != null && g.Name.Trim().ToLower() == name.Trim().ToLower());
+        }
 
         public Group Update(int id, Group group)
         {

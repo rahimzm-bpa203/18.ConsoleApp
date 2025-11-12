@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repository.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\user\\Desktop\\AcademySystem\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\AcademySystem\\Domain\\Domain.csproj"
+            "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Domain\\Domain.csproj"
             }
           }
         }

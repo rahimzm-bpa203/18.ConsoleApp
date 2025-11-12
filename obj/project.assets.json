@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\AcademySystem\\AcademySystem.csproj",
-      "projectName": "AcademySystem",
-      "projectPath": "C:\\Users\\user\\Desktop\\AcademySystem\\AcademySystem.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\AcademyPresentation.csproj",
+      "projectName": "AcademyPresentation",
+      "projectPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\AcademyPresentation.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\AcademySystem\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

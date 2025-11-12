@@ -8,8 +8,8 @@ namespace Service.Services.Interfaces
         Group Update(int id, Group group);
         void Delete(int id);
         Group GetById(int id);
-        Group GetByTeacher(string teacher);
-        Group GetByRoom(string room);
+        List<Group> GetByTeacher(string teacher);
+        List<Group> GetByRoom(string room);
         List<Group> Search(string searchText);
         List<Group> GetAll();
     }

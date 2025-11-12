@@ -182,6 +182,23 @@ namespace AcademySystem.Controllers
             }
         }
 
+        public void GetAll()
+        {
+            var students = _studentService.GetAll();
+            if (students == null || students.Count == 0)
+            {
+                Helper.PrintConsole(ConsoleColor.Yellow, "No students found!");
+                return;
+            }
+
+            foreach (var s in students)
+            {
+                Helper.PrintConsole(ConsoleColor.Green,
+                    $"Id: {s.Id}, Name: {s.Name} {s.Surname}, Age: {s.Age}, Group: {s.Group?.Name}");
+            }
+        }
+
+
         public void GetByGroupId()
         {
             Helper.PrintConsole(ConsoleColor.Blue, "Enter Group Id:");

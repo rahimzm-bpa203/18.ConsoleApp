@@ -8,8 +8,8 @@ namespace Service.Services.Interfaces
         Student Update(int id, Student student);
         void Delete(int id);
         Student GetById(int id);
-        Student GetByGroup(string groupName);
+        List<Student> GetByGroup(string groupName);
         List<Student> GetAll();
-        List<Student> Search(string searchText); 
+        List<Student> Search(string searchText);
     }
 }

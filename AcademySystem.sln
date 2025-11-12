@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademySystem", "AcademySystem.csproj", "{31793CE8-1E5F-49F3-AB2D-9D251656307D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyPresentation", "AcademyPresentation.csproj", "{31793CE8-1E5F-49F3-AB2D-9D251656307D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{6936C49C-899E-4704-BEA7-A069D0DA6C36}"
 EndProject

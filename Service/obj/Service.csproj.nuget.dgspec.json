@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\AcademySystem\\Service\\Service.csproj": {}
+    "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\AcademySystem\\Domain\\Domain.csproj": {
+    "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\AcademySystem\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\user\\Desktop\\AcademySystem\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\AcademySystem\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repository.csproj": {
+    "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\AcademySystem\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\AcademySystem\\Domain\\Domain.csproj"
+              "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Domain\\Domain.csproj"
               }
             }
           }
@@ -138,14 +138,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\AcademySystem\\Service\\Service.csproj": {
+    "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\AcademySystem\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\user\\Desktop\\AcademySystem\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\AcademySystem\\Service\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -166,8 +166,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\AcademySystem\\Repository\\Repository.csproj"
+              "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Repository\\Repository.csproj"
               }
             }
           }

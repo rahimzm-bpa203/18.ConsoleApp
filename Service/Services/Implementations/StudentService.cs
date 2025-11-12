@@ -47,6 +47,16 @@ namespace Service.Services.Implementations
         {
             return _studentRepository.Get(s => s.Id == id);
         }
+        public List<Student> GetByAge(int age)
+        {
+            return _studentRepository.GetAll(s => s.Age == age);
+        }
+
+        public List<Student> GetByGroupId(int groupId)
+        {
+            return _studentRepository.GetAll(s => s.Group != null && s.Group.Id == groupId);
+        }
+
 
         public Student GetByName(string name)
         {
