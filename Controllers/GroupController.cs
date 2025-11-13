@@ -9,6 +9,7 @@ namespace AcademySystem.Controllers
     public class GroupController
     {
         GroupService _groupService = new();
+        StudentService _studentService = new();
 
         public void Create()
         {
@@ -110,6 +111,14 @@ namespace AcademySystem.Controllers
             if (group == null)
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Group not found!");
+                return;
+            }
+
+            if (_studentService.GetAll().Count != 0)
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Group can't delete, it has student");
+                Helper.PrintConsole(ConsoleColor.Yellow, "Delete student atfirst");
+
                 return;
             }
 

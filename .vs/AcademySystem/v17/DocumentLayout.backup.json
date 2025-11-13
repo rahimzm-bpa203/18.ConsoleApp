@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|solutionrelative:controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,42 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 224,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Controllers\\StudentController.cs",
               "RelativeToolTip": "Controllers\\StudentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALUAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-13T10:18:47.85Z"
+              "WhenOpened": "2025-11-13T10:18:47.85Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GroupController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Controllers\\GroupController.cs",
               "RelativeDocumentMoniker": "Controllers\\GroupController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Controllers\\GroupController.cs",
               "RelativeToolTip": "Controllers\\GroupController.cs",
-              "ViewState": "AgIAAOYAAAAAAAAAAAAAABMAAABiAAAAAAAAAA==",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAmwI8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-13T10:18:46.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Program.cs*",
-              "RelativeToolTip": "Program.cs*",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAAAGoAAAA6AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-12T03:56:14.258Z",
               "EditorCaption": ""
