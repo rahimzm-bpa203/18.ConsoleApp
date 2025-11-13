@@ -88,6 +88,7 @@ namespace AcademySystem
         private static void GetMenus()
         {
             Helper.PrintConsole(ConsoleColor.Yellow,
+                "-----Group Choose-----\n"+
                 "1 - Create Group\n" +
                 "2 -Update Group \n" +
                 "3 - Delete Group\n" +
@@ -96,6 +97,7 @@ namespace AcademySystem
                 "6 -Get Group by Room \n" +
                 "7 - Get All Groups  \n" +
                 "8 - Search Group  \n\n" +
+                "-----Student Choose-----\n"+
                 "9 - Create Student\n" +
                 "10 - Update Student \n" +
                 "11 -Delete Student \n" +
