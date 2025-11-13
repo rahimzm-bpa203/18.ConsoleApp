@@ -96,7 +96,6 @@ namespace AcademySystem
                 "6 -Get Group by Room \n" +
                 "7 - Get All Groups  \n" +
                 "8 - Search Group  \n\n" +
-
                 "9 - Create Student\n" +
                 "10 - Update Student \n" +
                 "11 -Delete Student \n" +

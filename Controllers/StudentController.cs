@@ -210,6 +210,34 @@ namespace AcademySystem.Controllers
                 }
             }
         }
+        public void GetAll()
+        {
+        StudentID: Helper.PrintConsole(ConsoleColor.Blue, "Enter Student ID:");
+            string studentID = Console.ReadLine();
+            int id;
+            bool isID = int.TryParse(studentID, out id);
+            if (isID)
+            {
+                var result = _studentService.GetById(id);
+                if (result != null)
+                {
+                    Helper.PrintConsole(ConsoleColor.Green, $"ID: {result.Id},Name: {result.Name},Surname: {result.Surname},Age: {result.Age},Group: {result.Group.Name}");
+
+                }
+                else
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "Not Found Student!");
+                    Helper.PrintConsole(ConsoleColor.Yellow, "Create new Student[8] or try again[9] ");
+                }
+            }
+            else
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Incorrect ID type, try again.");
+                goto StudentID;
+            }
+
+        }
+
 
         public void Update()
         {

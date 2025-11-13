@@ -26,7 +26,7 @@ namespace AcademySystem.Controllers
 
             if (string.IsNullOrWhiteSpace(teacherName) || !Regex.IsMatch(teacherName, @"^[A-Za-z\s]+$"))
             {
-                Helper.PrintConsole(ConsoleColor.Red, "Teacher name must contain only letters!");
+                Helper.PrintConsole(ConsoleColor.Red, "Teacher name cannot be empty or must contain only letters!");
                 return;
             }
 
@@ -115,6 +115,73 @@ namespace AcademySystem.Controllers
             _groupService.Delete(id);
             Helper.PrintConsole(ConsoleColor.Green, $"Group '{group.Name}' deleted successfully!");
         }
+
+        public void GetAll()
+        {
+            List<Group> groups = _groupService.GetAll();
+            if (groups.Count > 0)
+            {
+                foreach (var group in groups)
+                {
+                    Helper.PrintConsole(ConsoleColor.Green, $"Group ID: {group.Id}, Group name: {group.Name}, Teacher: {group.Teacher}, Group Room: {group.Room} ");
+
+                }
+            }
+            else
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Warning!");
+
+                Helper.PrintConsole(ConsoleColor.Yellow, "It's empty, please create Group via press [1] or try again[4]");
+            }
+        }
+
+        public void GetByTeacher()
+        {
+
+
+            Helper.PrintConsole(ConsoleColor.Blue, "Search via Teacher name:");
+            string searchTeacher = Console.ReadLine()?.Trim().ToLower();
+
+            List<Group> group = _groupService.Search(searchTeacher);
+            if (group.Count > 0)
+            {
+                foreach (var groups in group)
+                {
+                    Helper.PrintConsole(ConsoleColor.Green, $"Group ID: {groups.Id}, Group name: {groups.Name}, Teacher: {groups.Teacher}, Group Room: {groups.Room} ");
+
+                }
+            }
+            else
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Invalid name or doesn't exists any groups, please try again.");
+                Helper.PrintConsole(ConsoleColor.Yellow, "Create new Group[1] or try again[5] ");
+
+            }
+
+        }
+
+        public void GetByRoom()
+        {
+            Helper.PrintConsole(ConsoleColor.Blue, "Search via Room name:");
+            string searchRoom = Console.ReadLine()?.Trim().ToLower();
+
+            List<Group> groups = _groupService.Search(searchRoom);
+            if (groups.Count > 0)
+            {
+                foreach (var group in groups)
+                {
+                    Helper.PrintConsole(ConsoleColor.Green, $"Group ID: {group.Id}, Group name: {group.Name}, Teacher: {group.Teacher}, Group Room: {group.Room} ");
+
+                }
+            }
+            else
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Invalid room or doesn't exists any groups, please try again.");
+                Helper.PrintConsole(ConsoleColor.Yellow, "Create new Group[1] or try again[6] ");
+
+            }
+        }
+
 
         public void Update()
         {
