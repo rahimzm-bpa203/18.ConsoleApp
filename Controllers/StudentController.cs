@@ -7,17 +7,16 @@ namespace AcademySystem.Controllers
 {
     public class StudentController
     {
-       StudentService _studentService = new();
+        StudentService _studentService = new();
         GroupService _groupService = new();
 
-    
         public void Create()
         {
         EnterGroupId:
             Helper.PrintConsole(ConsoleColor.Blue, "Enter Group Id:");
             string groupIdStr = Console.ReadLine();
 
-            if (!int.TryParse(groupIdStr, out int groupId))
+            if (!int.TryParse(groupIdStr, out int groupId) || groupId <= 0)
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Invalid group id!");
                 goto EnterGroupId;
@@ -26,22 +25,77 @@ namespace AcademySystem.Controllers
             var group = _groupService.GetById(groupId);
             if (group == null)
             {
-                Helper.PrintConsole(ConsoleColor.Red, "Group not found! Please try again.");
+                Helper.PrintConsole(ConsoleColor.Red, "Group not found! Try again.");
                 goto EnterGroupId;
             }
 
             Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Name:");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine()?.Trim();
+
+            if (string.IsNullOrEmpty(name))
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Name cannot be empty!");
+                return;
+            }
 
             Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Surname:");
-            string surname = Console.ReadLine();
+            string surname = Console.ReadLine()?.Trim();
+
+            if (string.IsNullOrEmpty(surname))
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Surname cannot be empty!");
+                return;
+            }
+
+            foreach (char c in name)
+            {
+                if (!char.IsLetter(c))
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "Name must contain only letters!");
+                    return;
+                }
+            }
+
+            foreach (char c in surname)
+            {
+                if (!char.IsLetter(c))
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "Surname must contain only letters!");
+                    return;
+                }
+            }
+
+            if (name.ToLower() == surname.ToLower())
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Name and Surname cannot be the same!");
+                return;
+            }
 
             Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Age:");
             string ageStr = Console.ReadLine();
 
-            if (!int.TryParse(ageStr, out int age))
+            if (!int.TryParse(ageStr, out int age) || age < 18 || age > 100)
             {
-                Helper.PrintConsole(ConsoleColor.Red, "Invalid age!");
+                Helper.PrintConsole(ConsoleColor.Red, "Age must be between 18 and 100!");
+                return;
+            }
+
+            bool exists = false;
+            foreach (var s in _studentService.GetAll())
+            {
+                if (s.Group != null &&
+                    s.Group.Id == group.Id &&
+                    s.Name.Trim().ToLower() == name.ToLower() &&
+                    s.Surname.Trim().ToLower() == surname.ToLower())
+                {
+                    exists = true;
+                    break;
+                }
+            }
+
+            if (exists)
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Student with this name already exists in this group!");
                 return;
             }
 
@@ -54,19 +108,117 @@ namespace AcademySystem.Controllers
             };
 
             var result = _studentService.Create(student);
+            Helper.PrintConsole(ConsoleColor.Green,
+                $"Student created successfully! Id: {result.Id}, Name: {result.Name} {result.Surname}, Group: {result.Group.Name}");
+        }
+
+        public void GetById()
+        {
+            Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Id:");
+            string idStr = Console.ReadLine();
+
+            if (!int.TryParse(idStr, out int id) || id <= 0)
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Invalid Id!");
+                return;
+            }
+
+            var student = _studentService.GetById(id);
+            if (student == null)
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Student not found!");
+                return;
+            }
 
             Helper.PrintConsole(ConsoleColor.Green,
-                $"Student created successfully! Id: {result.Id}, Name: {result.Name}, Group: {result.Group.Name}");
+                $"Id: {student.Id}, Name: {student.Name} {student.Surname}, Age: {student.Age}, Group: {student.Group?.Name}");
+        }
+
+        public void Delete()
+        {
+            Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Id to delete:");
+            string idStr = Console.ReadLine();
+
+            if (!int.TryParse(idStr, out int id) || id <= 0)
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Invalid Id!");
+                return;
+            }
+
+            var student = _studentService.GetById(id);
+            if (student == null)
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Student not found!");
+                return;
+            }
+
+            _studentService.Delete(id);
+            Helper.PrintConsole(ConsoleColor.Green, $"Student {student.Name} {student.Surname} deleted successfully!");
+        }
+
+        public void GetByAge()
+        {
+            Helper.PrintConsole(ConsoleColor.Blue, "Enter Age:");
+            string ageStr = Console.ReadLine();
+
+            if (!int.TryParse(ageStr, out int age) || age < 18)
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Age must be 18 or above!");
+                return;
+            }
+
+            var students = _studentService.GetByAge(age);
+
+            if (students == null || students.Count == 0)
+            {
+                Helper.PrintConsole(ConsoleColor.Yellow, "No students found with this age.");
+                return;
+            }
+
+            foreach (var student in students)
+            {
+                Helper.PrintConsole(ConsoleColor.Green,
+                    $"Id: {student.Id}, Name: {student.Name}, Surname: {student.Surname}, Group: {student.Group?.Name}");
+            }
+        }
+
+        public void Search()
+        {
+            Helper.PrintConsole(ConsoleColor.Blue, "Enter name or surname to search:");
+            string searchText = Console.ReadLine()?.Trim().ToLower();
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Search text cannot be empty!");
+                return;
+            }
+
+            var results = _studentService.Search(searchText);
+            if (results == null || results.Count == 0)
+            {
+                Helper.PrintConsole(ConsoleColor.Yellow, "No matching students found.");
+                return;
+            }
+
+            foreach (var student in results)
+            {
+                if (student.Name.ToLower().Contains(searchText) ||
+                    student.Surname.ToLower().Contains(searchText))
+                {
+                    Helper.PrintConsole(ConsoleColor.Green,
+                        $"Id: {student.Id}, Name: {student.Name} {student.Surname}, Group: {student.Group?.Name}");
+                }
+            }
         }
 
         public void Update()
         {
-            Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Id to Update:");
+            Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Id to update:");
             string idStr = Console.ReadLine();
 
-            if (!int.TryParse(idStr, out int id))
+            if (!int.TryParse(idStr, out int id) || id <= 0)
             {
-                Helper.PrintConsole(ConsoleColor.Red, "Invalid id!");
+                Helper.PrintConsole(ConsoleColor.Red, "Invalid Id!");
                 return;
             }
 
@@ -77,23 +229,50 @@ namespace AcademySystem.Controllers
                 return;
             }
 
-            Helper.PrintConsole(ConsoleColor.Blue, "Enter new Name (leave empty to keep current):");
-            string name = Console.ReadLine();
-            if (!string.IsNullOrWhiteSpace(name))
-                existingStudent.Name = name;
+            Helper.PrintConsole(ConsoleColor.Blue, "Enter new Name:");
+            string newName = Console.ReadLine()?.Trim();
+            if (!string.IsNullOrEmpty(newName))
+            {
+                foreach (char c in newName)
+                {
+                    if (!char.IsLetter(c))
+                    {
+                        Helper.PrintConsole(ConsoleColor.Red, "Name must contain only letters!");
+                        return;
+                    }
+                }
+                existingStudent.Name = newName;
+            }
 
-            Helper.PrintConsole(ConsoleColor.Blue, "Enter new Surname (leave empty to keep current):");
-            string surname = Console.ReadLine();
-            if (!string.IsNullOrWhiteSpace(surname))
-                existingStudent.Surname = surname;
+            Helper.PrintConsole(ConsoleColor.Blue, "Enter new Surname:");
+            string newSurname = Console.ReadLine()?.Trim();
+            if (!string.IsNullOrEmpty(newSurname))
+            {
+                foreach (char c in newSurname)
+                {
+                    if (!char.IsLetter(c))
+                    {
+                        Helper.PrintConsole(ConsoleColor.Red, "Surname must contain only letters!");
+                        return;
+                    }
+                }
+                existingStudent.Surname = newSurname;
+            }
 
-            Helper.PrintConsole(ConsoleColor.Blue, "Enter new Age (leave empty to keep current):");
+            Helper.PrintConsole(ConsoleColor.Blue, "Enter new Age:");
             string ageStr = Console.ReadLine();
-            if (int.TryParse(ageStr, out int age))
-                existingStudent.Age = age;
+            if (!string.IsNullOrEmpty(ageStr) && int.TryParse(ageStr, out int newAge))
+            {
+                if (newAge < 18 || newAge > 100)
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "Age must be between 18 and 100!");
+                    return;
+                }
+                existingStudent.Age = newAge;
+            }
 
             Helper.PrintConsole(ConsoleColor.Blue, "Do you want to change Group? (yes/no):");
-            string changeGroup = Console.ReadLine().Trim().ToLower();
+            string changeGroup = Console.ReadLine()?.Trim().ToLower();
 
             if (changeGroup == "yes")
             {
@@ -113,136 +292,14 @@ namespace AcademySystem.Controllers
                         Helper.PrintConsole(ConsoleColor.Red, "Group not found. Group not changed.");
                     }
                 }
+                else
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "Invalid Group Id!");
+                }
             }
 
             _studentService.Update(id, existingStudent);
-
-            Helper.PrintConsole(ConsoleColor.Green, $"Student updated successfully!");
-        }
-
-        public void GetById()
-        {
-            Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Id:");
-            string idStr = Console.ReadLine();
-
-            if (!int.TryParse(idStr, out int id))
-            {
-                Helper.PrintConsole(ConsoleColor.Red, "Invalid id!");
-                return;
-            }
-
-            var student = _studentService.GetById(id);
-            if (student == null)
-            {
-                Helper.PrintConsole(ConsoleColor.Red, "Student not found!");
-                return;
-            }
-
-            Helper.PrintConsole(ConsoleColor.Green,
-                $"Id: {student.Id}, Name: {student.Name} {student.Surname}, Age: {student.Age}, Group: {student.Group?.Name}");
-        }
-        public void Delete()
-        {
-            Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Id to delete:");
-            string idStr = Console.ReadLine();
-
-            if (!int.TryParse(idStr, out int id))
-            {
-                Helper.PrintConsole(ConsoleColor.Red, "Invalid id!");
-                return;
-            }
-
-            _studentService.Delete(id);
-            Helper.PrintConsole(ConsoleColor.Green, "Student deleted successfully!");
-        }
-
-        public void GetByAge()
-        {
-            Helper.PrintConsole(ConsoleColor.Blue, "Enter Age:");
-            string ageStr = Console.ReadLine();
-
-            if (!int.TryParse(ageStr, out int age))
-            {
-                Helper.PrintConsole(ConsoleColor.Red, "Invalid age!");
-                return;
-            }
-
-            var students = _studentService.GetByAge(age);
-
-            if (students.Count == 0)
-            {
-                Helper.PrintConsole(ConsoleColor.Yellow, "No students found with this age.");
-                return;
-            }
-
-            foreach (var student in students)
-            {
-                Helper.PrintConsole(ConsoleColor.Green,
-                    $"Id: {student.Id}, Name: {student.Name}, Surname: {student.Surname}, Group: {student.Group?.Name}");
-            }
-        }
-
-        public void GetAll()
-        {
-            var students = _studentService.GetAll();
-            if (students == null || students.Count == 0)
-            {
-                Helper.PrintConsole(ConsoleColor.Yellow, "No students found!");
-                return;
-            }
-
-            foreach (var s in students)
-            {
-                Helper.PrintConsole(ConsoleColor.Green,
-                    $"Id: {s.Id}, Name: {s.Name} {s.Surname}, Age: {s.Age}, Group: {s.Group?.Name}");
-            }
-        }
-
-
-        public void GetByGroupId()
-        {
-            Helper.PrintConsole(ConsoleColor.Blue, "Enter Group Id:");
-            string groupIdStr = Console.ReadLine();
-
-            if (!int.TryParse(groupIdStr, out int groupId))
-            {
-                Helper.PrintConsole(ConsoleColor.Red, "Invalid group id!");
-                return;
-            }
-
-            var students = _studentService.GetByGroupId(groupId);
-
-            if (students.Count == 0)
-            {
-                Helper.PrintConsole(ConsoleColor.Yellow, "No students found for this group.");
-                return;
-            }
-
-            foreach (var student in students)
-            {
-                Helper.PrintConsole(ConsoleColor.Green,
-                    $"Id: {student.Id}, Name: {student.Name}, Group: {student.Group?.Name}");
-            }
-        }
-
-        public void Search()
-        {
-            Helper.PrintConsole(ConsoleColor.Blue, "Enter name or surname to search:");
-            string searchText = Console.ReadLine();
-
-            var results = _studentService.Search(searchText);
-
-            if (results.Count == 0)
-            {
-                Helper.PrintConsole(ConsoleColor.Yellow, "No matching students found.");
-                return;
-            }
-
-            foreach (var student in results)
-            {
-                Helper.PrintConsole(ConsoleColor.Green,
-                    $"Id: {student.Id}, Name: {student.Name} {student.Surname}, Group: {student.Group?.Name}");
-            }
+            Helper.PrintConsole(ConsoleColor.Green, "Student updated successfully!");
         }
     }
 }

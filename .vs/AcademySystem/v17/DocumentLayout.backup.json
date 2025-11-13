@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|solutionrelative:controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|c:\\users\\user\\desktop\\18.consoleapp\\service\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|c:\\users\\user\\desktop\\18.consoleapp\\service\\services\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\igroupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\helpers\\menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|solutionrelative:helpers\\menus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8DBBF2C-9029-4884-84D0-D38A88D1BC85}|Repository\\Repository.csproj|c:\\users\\user\\desktop\\18.consoleapp\\repository\\repostories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8DBBF2C-9029-4884-84D0-D38A88D1BC85}|Repository\\Repository.csproj|solutionrelative:repository\\repostories\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|c:\\users\\user\\desktop\\18.consoleapp\\service\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|solutionrelative:service\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|c:\\users\\user\\desktop\\18.consoleapp\\service\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|solutionrelative:service\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|c:\\users\\user\\desktop\\18.consoleapp\\service\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5134924-E838-46AE-90D9-7DAC546A0E87}|Service\\Service.csproj|solutionrelative:service\\services\\implementations\\groupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|solutionrelative:controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|c:\\users\\user\\desktop\\18.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31793CE8-1E5F-49F3-AB2D-9D251656307D}|AcademyPresentation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,59 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 224,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Repository\\Repostories\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repostories\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Repository\\Repostories\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "Repository\\Repostories\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Implementations\\StudentService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Implementations\\StudentService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Implementations\\StudentService.cs",
+              "RelativeToolTip": "Service\\Services\\Implementations\\StudentService.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAA7wEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T08:03:35.648Z"
+              "WhenOpened": "2025-11-12T17:49:49.916Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Menus.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Helpers\\Menus.cs",
-              "RelativeDocumentMoniker": "Helpers\\Menus.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Helpers\\Menus.cs",
-              "RelativeToolTip": "Helpers\\Menus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T07:59:14.492Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IGroupService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Interfaces\\IGroupService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IGroupService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Interfaces\\IGroupService.cs",
-              "RelativeToolTip": "Service\\Services\\Interfaces\\IGroupService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T04:08:12.5Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "GroupService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Implementations\\GroupService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\Implementations\\GroupService.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Implementations\\GroupService.cs",
               "RelativeToolTip": "Service\\Services\\Implementations\\GroupService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAAC8AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T04:03:35.248Z"
+              "WhenOpened": "2025-11-12T17:49:27.626Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -110,52 +72,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IStudentService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Interfaces\\IStudentService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IStudentService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Interfaces\\IStudentService.cs",
-              "RelativeToolTip": "Service\\Services\\Interfaces\\IStudentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T02:01:36.77Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Implementations\\StudentService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\Implementations\\StudentService.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Service\\Services\\Implementations\\StudentService.cs",
-              "RelativeToolTip": "Service\\Services\\Implementations\\StudentService.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAiwDoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T02:01:07.312Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "GroupController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Controllers\\GroupController.cs",
               "RelativeDocumentMoniker": "Controllers\\GroupController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Controllers\\GroupController.cs",
               "RelativeToolTip": "Controllers\\GroupController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA+wA8AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T22:53:18.784Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-11T22:53:18.784Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\18.ConsoleApp\\Controllers\\StudentController.cs",
               "RelativeToolTip": "Controllers\\StudentController.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAAAMwAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAMwAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T22:53:01.216Z"
+              "WhenOpened": "2025-11-11T22:53:01.216Z",
+              "EditorCaption": ""
             }
           ]
         },

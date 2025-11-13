@@ -45,7 +45,7 @@ namespace Service.Services.Implementations
 
             return group;
         }
-        public List<Group> GetByTeacher(string teacher)
+        public List<Group> GetByTeacher(string teacher) 
         {
             if (string.IsNullOrWhiteSpace(teacher))
                 return new List<Group>();
