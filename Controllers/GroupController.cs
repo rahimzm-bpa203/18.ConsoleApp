@@ -15,9 +15,9 @@ namespace AcademySystem.Controllers
             Helper.PrintConsole(ConsoleColor.Blue, "Add Group Name:");
             string groupName = Console.ReadLine();
 
-            if (string.IsNullOrWhiteSpace(groupName) || groupName.Length < 25)
+            if (string.IsNullOrWhiteSpace(groupName) || groupName.Length > 2)
             {
-                Helper.PrintConsole(ConsoleColor.Red, "Group name cannot be empty or longer than 50 characters!");
+                Helper.PrintConsole(ConsoleColor.Red, "Group name cannot be empty or longer than 2 characters!");
                 return;
             }
 
@@ -35,16 +35,16 @@ namespace AcademySystem.Controllers
 
             if (string.IsNullOrWhiteSpace(roomName) || roomName.Length > 2)
             {
-                Helper.PrintConsole(ConsoleColor.Red, "Room name cannot be empty or longer than 20 characters!");
+                Helper.PrintConsole(ConsoleColor.Red, "Room name cannot be empty or longer than 2 characters!");
                 return;
             }
 
             teacherName = teacherName.ToLower();
-            roomName = roomName.ToLower();
+            groupName = groupName.ToLower();
 
-            if (teacherName == roomName)
+            if (teacherName == groupName)
             {
-                Helper.PrintConsole(ConsoleColor.Red, "Teacher and room name cannot be the same!");
+                Helper.PrintConsole(ConsoleColor.Red, "Teacher and group name cannot be the same!");
             }
 
             foreach (var groups in _groupService.GetAll())
@@ -57,6 +57,7 @@ namespace AcademySystem.Controllers
             }
 
             teacherName = char.ToUpper(teacherName[0]) + teacherName.Substring(1).ToLower();
+            groupName = char.ToUpper(groupName[0]) + groupName.Substring(1).ToLower();
 
             Group group = new Group
             {
@@ -139,7 +140,7 @@ namespace AcademySystem.Controllers
         {
 
 
-            Helper.PrintConsole(ConsoleColor.Blue, "Search via Teacher name:");
+            Helper.PrintConsole(ConsoleColor.Blue, "Search  Teacher name:");
             string searchTeacher = Console.ReadLine()?.Trim().ToLower();
 
             List<Group> group = _groupService.Search(searchTeacher);
@@ -162,7 +163,7 @@ namespace AcademySystem.Controllers
 
         public void GetByRoom()
         {
-            Helper.PrintConsole(ConsoleColor.Blue, "Search via Room name:");
+            Helper.PrintConsole(ConsoleColor.Blue, "Search  Room name:");
             string searchRoom = Console.ReadLine()?.Trim().ToLower();
 
             List<Group> groups = _groupService.Search(searchRoom);

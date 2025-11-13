@@ -104,7 +104,7 @@ namespace AcademySystem
                 "12 -Get Student by Id \n" +
                 "13 - Get Student by Age\n" +
                 "14 - Get All Students\n" +
-                "15 - Search Student\n"
+                "15 - Search Student By Name or Surname\n"
                 );
         }
     }
