@@ -13,40 +13,45 @@ namespace AcademySystem.Controllers
 
         public void Create()
         {
+        GroupName:
             Helper.PrintConsole(ConsoleColor.Blue, "Add Group Name:");
             string groupName = Console.ReadLine();
 
             if (string.IsNullOrWhiteSpace(groupName) || groupName.Length > 2)
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Group name cannot be empty or longer than 2 characters!");
-                return;
+                goto GroupName;
             }
 
+        TeacherName:
             Helper.PrintConsole(ConsoleColor.Blue, "Add Teacher Name:");
             string teacherName = Console.ReadLine();
 
             if (string.IsNullOrWhiteSpace(teacherName) || !Regex.IsMatch(teacherName, @"^[A-Za-z\s]+$"))
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Teacher name cannot be empty or must contain only letters!");
-                return;
+                goto TeacherName;
             }
-
-            Helper.PrintConsole(ConsoleColor.Blue, "Add Room Name:");
-            string roomName = Console.ReadLine();
-
-            if (string.IsNullOrWhiteSpace(roomName) || roomName.Length > 2)
-            {
-                Helper.PrintConsole(ConsoleColor.Red, "Room name cannot be empty or longer than 2 characters!");
-                return;
-            }
-
             teacherName = teacherName.ToLower();
             groupName = groupName.ToLower();
 
             if (teacherName == groupName)
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Teacher and group name cannot be the same!");
+                goto TeacherName;
             }
+
+        RoomName:
+            Helper.PrintConsole(ConsoleColor.Blue, "Add Room Name:");
+            string roomName = Console.ReadLine();
+
+            if (string.IsNullOrWhiteSpace(roomName) || roomName.Length > 2)
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Room name cannot be empty or longer than 2 characters!");
+                goto RoomName;
+            }
+
+           
 
             foreach (var groups in _groupService.GetAll())
             {
@@ -98,20 +103,21 @@ namespace AcademySystem.Controllers
 
         public void Delete()
         {
+        Groupid:
             Helper.PrintConsole(ConsoleColor.Blue, "Enter Group Id to delete:");
             string idStr = Console.ReadLine();
 
             if (!int.TryParse(idStr, out int id) || id <= 0)
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Invalid group id!");
-                return;
+                goto Groupid;
             }
 
             var group = _groupService.GetById(id);
             if (group == null)
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Group not found!");
-                return;
+                goto Groupid;
             }
 
             if (_studentService.GetAll().Count != 0)
@@ -121,9 +127,11 @@ namespace AcademySystem.Controllers
 
                 return;
             }
-
-            _groupService.Delete(id);
-            Helper.PrintConsole(ConsoleColor.Green, $"Group '{group.Name}' deleted successfully!");
+            else
+            {
+                _groupService.Delete(id);
+                Helper.PrintConsole(ConsoleColor.Green, $"Group '{group.Name}' deleted successfully!");
+            }
         }
 
         public void GetAll()
@@ -141,14 +149,12 @@ namespace AcademySystem.Controllers
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Warning!");
 
-                Helper.PrintConsole(ConsoleColor.Yellow, "It's empty, please create Group via press [1] or try again[4]");
+                Helper.PrintConsole(ConsoleColor.Yellow, "It's empty, please create Group  press [1] or try again[4]");
             }
         }
 
         public void GetByTeacher()
         {
-
-
             Helper.PrintConsole(ConsoleColor.Blue, "Search  Teacher name:");
             string searchTeacher = Console.ReadLine()?.Trim().ToLower();
 
@@ -195,48 +201,50 @@ namespace AcademySystem.Controllers
 
         public void Update()
         {
+        groupid:
             Helper.PrintConsole(ConsoleColor.Blue, "Enter Group Id to update:");
             string idStr = Console.ReadLine();
 
             if (!int.TryParse(idStr, out int id) || id <= 0)
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Invalid group id!");
-                return;
+                goto groupid;
             }
 
             var group = _groupService.GetById(id);
             if (group == null)
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Group not found!");
-                return;
+                goto groupid;
             }
 
             Helper.PrintConsole(ConsoleColor.Blue, $"Current Name: {group.Name}. Enter new name (or press Enter to skip):");
-            string newName = Console.ReadLine();
+            string newGroupName = Console.ReadLine();
 
+        newteacher:
             Helper.PrintConsole(ConsoleColor.Blue, $"Current Teacher: {group.Teacher}. Enter new teacher (or press Enter to skip):");
             string newTeacher = Console.ReadLine();
 
             Helper.PrintConsole(ConsoleColor.Blue, $"Current Room: {group.Room}. Enter new room (or press Enter to skip):");
             string newRoom = Console.ReadLine();
 
-            if (string.IsNullOrWhiteSpace(newName)) newName = group.Name;
+            if (string.IsNullOrWhiteSpace(newGroupName)) newGroupName = group.Name;
             if (string.IsNullOrWhiteSpace(newTeacher)) newTeacher = group.Teacher;
             if (string.IsNullOrWhiteSpace(newRoom)) newRoom = group.Room;
 
             if (!Regex.IsMatch(newTeacher, @"^[A-Za-z\s]+$"))
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Teacher name must contain only letters!");
-                return;
+                goto newteacher;
             }
 
-            if (newTeacher.ToLower() == newRoom.ToLower())
+            if (newTeacher.ToLower() == newGroupName.ToLower())
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Teacher and Room name cannot be the same!");
-                return;
+                goto newteacher;
             }
 
-            var result = _groupService.Update(id, new Group { Name = newName, Teacher = newTeacher, Room = newRoom });
+            var result = _groupService.Update(id, new Group { Name = newGroupName, Teacher = newTeacher, Room = newRoom });
 
             if (result != null)
                 Helper.PrintConsole(ConsoleColor.Green, $"Group updated successfully!");
@@ -246,13 +254,14 @@ namespace AcademySystem.Controllers
 
         public void Search()
         {
+        groupname:
             Helper.PrintConsole(ConsoleColor.Blue, "Enter group name to search:");
             string name = Console.ReadLine();
 
             if (string.IsNullOrWhiteSpace(name))
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Group name cannot be empty!");
-                return;
+                goto groupname;
             }
 
             var groups = _groupService.Search(name);
@@ -260,7 +269,7 @@ namespace AcademySystem.Controllers
             if (groups.Count == 0)
             {
                 Helper.PrintConsole(ConsoleColor.Yellow, "No groups found!");
-                return;
+                goto groupname;
             }
 
             foreach (var group in groups)
