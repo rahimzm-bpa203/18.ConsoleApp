@@ -17,7 +17,7 @@ namespace AcademySystem.Controllers
             Helper.PrintConsole(ConsoleColor.Blue, "Add Group Name:");
             string groupName = Console.ReadLine();
 
-            if (string.IsNullOrWhiteSpace(groupName) || groupName.Length > 2)
+            if (string.IsNullOrEmpty(groupName) || groupName.Length < 2)
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Group name cannot be empty or longer than 2 characters!");
                 goto GroupName;
@@ -27,7 +27,7 @@ namespace AcademySystem.Controllers
             Helper.PrintConsole(ConsoleColor.Blue, "Add Teacher Name:");
             string teacherName = Console.ReadLine();
 
-            if (string.IsNullOrWhiteSpace(teacherName) || !Regex.IsMatch(teacherName, @"^[A-Za-z\s]+$"))
+            if (string.IsNullOrEmpty(teacherName) || !Regex.IsMatch(teacherName, @"^[A-Za-z\s]+$"))
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Teacher name cannot be empty or must contain only letters!");
                 goto TeacherName;
@@ -45,7 +45,7 @@ namespace AcademySystem.Controllers
             Helper.PrintConsole(ConsoleColor.Blue, "Add Room Name:");
             string roomName = Console.ReadLine();
 
-            if (string.IsNullOrWhiteSpace(roomName) || roomName.Length > 2)
+            if (string.IsNullOrEmpty(roomName) || roomName.Length < 2)
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Room name cannot be empty or longer than 2 characters!");
                 goto RoomName;

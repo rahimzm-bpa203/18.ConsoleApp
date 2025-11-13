@@ -78,9 +78,9 @@ namespace AcademySystem.Controllers
             Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Age:");
             string ageStr = Console.ReadLine();
 
-            if (!int.TryParse(ageStr, out int age) || age < 18 || age > 100)
+            if (!int.TryParse(ageStr, out int age) || age < 18 || age > 30)
             {
-                Helper.PrintConsole(ConsoleColor.Red, "Age must be between 18 and 100!");
+                Helper.PrintConsole(ConsoleColor.Red, "Age must be between 18 and 30!");
                 return;
             }
 
@@ -149,7 +149,11 @@ namespace AcademySystem.Controllers
         Age:
             Helper.PrintConsole(ConsoleColor.Blue, "Enter Age:");
             string ageStr = Console.ReadLine();
-
+            if (string.IsNullOrEmpty(ageStr))
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Age is not empty!");
+                goto Age;
+            }
             if (!int.TryParse(ageStr, out int age) || age < 18)
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Age must be 18 or above!");
@@ -292,8 +296,9 @@ namespace AcademySystem.Controllers
                 }
                 existingStudent.Age = newAge;
             }
+        
 
-            Helper.PrintConsole(ConsoleColor.Blue, "Do you want to change Group? (yes/no):");
+                Helper.PrintConsole(ConsoleColor.Blue, "Do you want to change Group? (yes/no):");
             string changeGroup = Console.ReadLine()?.Trim().ToLower();
 
             if (changeGroup == "yes")
